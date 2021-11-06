@@ -1,20 +1,10 @@
 import { ref, watch } from "vue";
 import { useQuery } from "@vue/apollo-composable";
-import gql from "graphql-tag";
-
-const query = gql`
-    query getRockets {
-        rockets {
-            name
-            description
-            stages
-        }
-    }
-`
+import {getRockets} from "../graphQL/queries";
 
 export default function () {
   const rockets = ref([])
-  const { result, loading } = useQuery(query)
+  const { result, loading } = useQuery(getRockets)
 
   watch(loading, (value) => {
     if (value) return
