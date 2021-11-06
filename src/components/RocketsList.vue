@@ -1,5 +1,5 @@
 <script setup>
-import useRockets from "../composables/useRockets";
+import useRockets from '../composables/useRockets';
 
 const { rockets, loading } = useRockets()
 </script>

@@ -1,6 +1,6 @@
-import { ref, watch } from "vue";
-import { useQuery } from "@vue/apollo-composable";
-import {getRockets} from "../graphQL/queries";
+import { ref, watch } from 'vue';
+import { useQuery } from '@vue/apollo-composable';
+import {getRockets} from '../graphQL/queries';
 
 export default function () {
   const rockets = ref([])
@@ -16,4 +16,3 @@ export default function () {
     loading
   }
 }
-

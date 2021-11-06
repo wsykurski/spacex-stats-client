@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
+// eslint-disable-next-line no-undef
 defineProps({
   msg: String
 })

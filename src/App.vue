@@ -1,10 +1,10 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import { provide } from "vue";
+import { provide } from 'vue';
 import { DefaultApolloClient } from '@vue/apollo-composable'
-import { spacexClient } from "./graphql/client";
-import RocketsList from "./components/RocketsList.vue"
+import { spacexClient } from './graphql/client';
+import RocketsList from './components/RocketsList.vue'
 
 provide(DefaultApolloClient, spacexClient)
 
