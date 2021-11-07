@@ -1,7 +1,6 @@
 <script setup>
-import RocketsList from '@/components/RocketsList.vue'
 </script>
 
 <template>
-  <RocketsList/>
+  <h1>SX page</h1>
 </template>
