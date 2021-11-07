@@ -6,7 +6,27 @@ export const getRockets = gql`
             name
             description
             stages
+            id
         }
+    }
+`
+
+export const getRocket = gql`
+    query getRocket($id: ID!) {
+        rocket(id: $id) {
+            name
+            first_flight
+            height {
+                feet
+                meters
+            }
+            first_stage {
+                fuel_amount_tons
+            }
+            diameter {
+                meters
+            }
+            description        }
     }
 `
 
