@@ -11,7 +11,7 @@ provide(DefaultApolloClient, spacexClient)
 </script>
 
 <template>
-  <RocketsList/>
+  <router-view/>
 </template>
 
 <style>
