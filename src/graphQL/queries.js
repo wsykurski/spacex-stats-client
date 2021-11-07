@@ -9,3 +9,16 @@ export const getRockets = gql`
         }
     }
 `
+
+export const getLandpads = gql`
+  query getLandpads {
+      landpads {
+          attempted_landings
+          location {
+              name
+          }
+          successful_landings
+          
+      }
+  }
+`

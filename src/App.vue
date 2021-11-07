@@ -3,7 +3,7 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { provide } from 'vue';
 import { DefaultApolloClient } from '@vue/apollo-composable'
-import { spacexClient } from './graphql/client';
+import { spacexClient } from './graphQL/client';
 import RocketsList from './components/RocketsList.vue'
 
 provide(DefaultApolloClient, spacexClient)
