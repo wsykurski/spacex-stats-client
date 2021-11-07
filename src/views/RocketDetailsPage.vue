@@ -12,7 +12,7 @@ const { result, loading } = useQuery(getRocket, { id })
 </script>
 
 <template>
-  <button @click="router.go(-1)">GoBack</button>
+  <el-button type="primary" @click="router.go(-1)">GoBack</el-button>
   <h1>Rocket Details</h1>
 
   <h3 v-if="loading">Loading...</h3>
