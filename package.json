@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "jest src"
   },
   "dependencies": {
     "@apollo/client": "^3.4.16",
@@ -15,8 +16,11 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/test-utils": "^2.0.0-rc.16",
     "eslint": "^8.2.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vite": "^2.6.4"
+    "jest": "^26.6.3",
+    "vite": "^2.6.4",
+    "vue-jest": "^5.0.0-alpha.10"
   }
 }
