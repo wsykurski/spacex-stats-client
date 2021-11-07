@@ -4,6 +4,7 @@ import Home from '@/views/HomePage.vue'
 
 // const Home = () => import('@/views/HomePage.vue')
 const RocketDetails = () => import('@/views/RocketDetailsPage.vue')
+const RocketsList = () => import('@/views/RocketsListPage.vue')
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -12,6 +13,11 @@ export const router = createRouter({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/rockets',
+      name: 'rockets',
+      component: RocketsList
     },
     {
       path: '/rockets/:id',
